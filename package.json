@@ -1,0 +1,41 @@
+{
+  "name": "@savage181855/utils",
+  "version": "1.0.0",
+  "description": "js工具库",
+  "main": "dist/index.js",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "dev": "rollup -c rollup.config.js --watch",
+    "build": "rollup -c rollup.config.js"
+  },
+  "type": "commonjs",
+  "author": {
+    "name": "savage",
+    "email": "2443005004@qq.com",
+    "url": "https://github.com/savage181855/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/savage181855/mini-store"
+  },
+  "homepage": "https://github.com/savage181855/mini-store",
+  "bugs": {
+    "url": "https://github.com/savage181855/mini-store",
+    "email": "2443005004@qq.com"
+  },
+  "keywords": [
+    "工具库",
+    "js工具库",
+    "utils"
+  ],
+  "license": "GNU GPLv3",
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "rollup": "^3.2.3",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.8.4",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
