@@ -1,9 +1,9 @@
+const path = require("path");
+
 const resolve = require("@rollup/plugin-node-resolve");
 const { terser } = require("rollup-plugin-terser");
 const ts = require("rollup-plugin-typescript2");
-// import ts from "rollup-plugin-typescript2";
 
-const path = require("path");
 
 module.exports = {
   input: "src/index.ts", // 打包入口
@@ -20,7 +20,7 @@ module.exports = {
     terser(), // 压缩代码和去除注释
     ts({ // 解析 typescript
       tsconfig: path.resolve(__dirname, "tsconfig.json"),
-      extensions: [".js", ".ts", ".tsx"],
+      extensions: [".js", ".ts", ".tsx"], // 解析的扩展名
     }),
   ],
 };
