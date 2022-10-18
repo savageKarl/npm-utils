@@ -1,3 +1,2 @@
-export function say(str: string) {
-  console.debug(str)
-}
+export * from "./eventCenter";
+export * from "./functions";
