@@ -95,7 +95,7 @@ export function shallowClone(obj: ObjectAndAarryType) {
     return obj;
   }
 
-  const o: any = Object.prototype.toString.call(obj) === "Array" ? [] : {};
+  const o: typeof obj = Object.prototype.toString.call(obj) === "Array" ? [] : {};
   for (let i in obj) {
     o[i] = obj[i];
   }
@@ -112,7 +112,7 @@ export function deepClone(obj: ObjectAndAarryType) {
     return obj;
   }
 
-  const o: any = Object.prototype.toString.call(obj) === "Array" ? [] : {};
+  const o: typeof obj  = Object.prototype.toString.call(obj) === "Array" ? [] : {};
   for (let i in obj) {
     o[i] = typeof obj[i] === "object" ? deepClone(obj[i]) : obj[i];
   }
@@ -132,12 +132,13 @@ export function hasChanged(
   return !isSameDeep(value, oldValue);
 }
 
-/** 代理模式 */
-export function getSingle(fn: () => unknown) {
-  let res: any;
+/** 单例模式 */
+export function getSingle<T>(fn: () => T) {
+  let res: T;
 
   return function (this: unknown, ...args: any) {
     return res || fn.apply(this, args);
   };
 }
+
 

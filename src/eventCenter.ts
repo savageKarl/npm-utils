@@ -2,7 +2,7 @@ import { deepClone } from "./functions";
 import type { ObjectAndAarryType } from "./functions";
 
 interface SubscribeType {
-  [index: string]: Array<(...args: any) => unknown>;
+  [index: string | symbol]: Array<(...args: any) => unknown>;
 }
 
 const EventCenter = {
@@ -24,7 +24,7 @@ const EventCenter = {
       fns.forEach((fn) => fn(value));
     }
   },
-  remove(name: string, fn: () => unknown) {
+  remove(name: string, fn: (...args: any) => unknown) {
     const fns = this.subscribeList[name];
     if (!fns || fns.length === 0) return;
     if (fn) {
@@ -38,11 +38,11 @@ const EventCenter = {
     }
   },
 };
-
+// 为什么不直接导出 EventCenter，因为项目有可能用两个 EventCenter，引用类型，会导致污染
 // 这里无法提示 EventCenter 里面的每一个属性，不知道怎么做，要学一学类型体操才能写
 /** 给对象添加发布订阅的事件中心 */
 export function installEventCenter(obj: ObjectAndAarryType) {
   const cloneObj = deepClone(EventCenter);
   for (let k in EventCenter) obj[k] = cloneObj[k];
-  return obj as (typeof EventCenter & typeof obj);
+  return obj as typeof EventCenter & typeof obj;
 }
