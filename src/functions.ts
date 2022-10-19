@@ -137,7 +137,7 @@ export function getSingle<T>(fn: () => T) {
   let res: T;
 
   return function (this: unknown, ...args: any) {
-    return res || fn.apply(this, args);
+    return res || (res = fn.apply(this, args));
   };
 }
 
