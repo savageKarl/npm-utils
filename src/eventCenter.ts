@@ -44,5 +44,5 @@ const EventCenter = {
 export function installEventCenter(obj: ObjectAndAarryType) {
   const cloneObj = deepClone(EventCenter);
   for (let k in EventCenter) obj[k] = cloneObj[k];
-  return obj;
+  return obj as (typeof EventCenter & typeof obj);
 }
