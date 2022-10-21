@@ -1,6 +1,6 @@
 {
   "name": "@savage181855/utils",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "js工具库",
   "main": "dist/index.js",
   "files": [
