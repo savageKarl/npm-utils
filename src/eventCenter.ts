@@ -43,6 +43,6 @@ const EventCenter = {
 /** 给对象添加发布订阅的事件中心 */
 export function installEventCenter(obj: ObjectAndAarryType) {
   const cloneObj = deepClone(EventCenter);
-  for (let k in EventCenter) obj[k] = cloneObj[k];
+  for (let k in EventCenter) obj[k] = cloneObj[k as keyof typeof cloneObj];
   return obj as typeof EventCenter & typeof obj;
 }
