@@ -4,3 +4,4 @@ export * from "./parseAreaData";
 export * from "./optimization";
 export * from "./copy";
 export * from "./compare";
+export * from "./iterator";

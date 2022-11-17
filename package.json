@@ -1,6 +1,6 @@
 {
   "name": "@savage181855/utils",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "js工具库",
   "main": "dist/index.js",
   "module": "./dist/index.mjs",
