@@ -15,6 +15,8 @@ const a = {
 
 // deepClone()
 
+
+
 const b = shallowCopy(a);
 
 // b.obj.fuck = 'shit'

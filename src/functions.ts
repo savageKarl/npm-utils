@@ -1,3 +1,4 @@
+
 export type ObjectAndAarryType = Record<string, any>;
 
 // a[3].b -> a.3.b -> [a, 3, b]
@@ -20,3 +21,5 @@ export function getSingle<T>(fn: () => T) {
     return res || (res = fn.apply(this, args));
   };
 }
+
+
