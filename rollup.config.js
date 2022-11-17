@@ -7,8 +7,9 @@ module.exports = {
   input: "src/index.ts", // pack entry
   output: [
     {
-      file: "dist/index.js", // ouput file
-      format: "esm", // file module specifications
+      file: "dist/index.js", // 输出的文件
+      format: "esm", // 文件模块规范
+      name: "@savage181855/utils", // 模块变量名 Var @savage181855/utils=模块内容
       sourcemap: true,
     },
   ],
