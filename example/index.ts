@@ -1,4 +1,4 @@
-import { deepClone, isSameDeep, isSameShallow, shallowClone } from "../src/index";
+import { deepCompare, shallowCopy } from "../src/index";
 
 
 const a = {
@@ -15,9 +15,9 @@ const a = {
 
 // deepClone()
 
-const b = shallowClone(a);
+const b = shallowCopy(a);
 
 // b.obj.fuck = 'shit'
 
 console.debug(a, b)
-console.log(isSameDeep(a, b))
+console.log(deepCompare(a, b))
