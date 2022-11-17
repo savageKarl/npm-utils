@@ -12,6 +12,11 @@ module.exports = {
       name: "@savage181855/utils", // 模块变量名 Var @savage181855/utils=模块内容
       sourcemap: true,
     },
+    {
+      file: "dist/index.js", // ouput file
+      format: "cjs", // file module specifications
+      sourcemap: true,
+    },
   ],
   plugins: [
     del({ targets: "./dist/*" }),
