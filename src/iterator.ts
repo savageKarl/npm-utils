@@ -2,12 +2,12 @@ import { dataTypes } from "@savage181855/data-types";
 
 export function each<T extends object>(
   obj: T,
-  fn: (i: keyof T, v: T[keyof T], obj: T) => unknown
+  fn: (v: T[keyof T], i: keyof T, obj: T) => unknown
 ) {
   if (dataTypes.isObject(obj) || dataTypes.isArray(obj)) {
     for (let k in obj) {
-      const res = fn(k, obj[k], obj);
-      if (!res) break;
+      const res = fn(obj[k], k, obj);
+      if (dataTypes.isBoolean(res) && String(res) === 'false') break;
     }
   }
 }
