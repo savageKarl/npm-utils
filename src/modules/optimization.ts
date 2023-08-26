@@ -7,7 +7,7 @@ type Callback = (...args: any) => unknown;
  * @param immediate 是否立即调用
  */
 export function debounce(fn: Callback, delay = 1500, immediate = true) {
-  let timer: NodeJS.Timeout | null;
+  let timer: NodeJS.Timeout | null = null;
 
   return function (this: any, ...args: any) {
     if (timer) clearTimeout(timer);
@@ -44,7 +44,7 @@ export function throttle(
       }
     };
   } else {
-    let timer: NodeJS.Timeout | null;
+    let timer: NodeJS.Timeout | null = null;
 
     return function (this: any, ...args: any) {
       if (!timer) {

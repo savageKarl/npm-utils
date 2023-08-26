@@ -145,11 +145,6 @@
     estree-walker "^2.0.2"
     picomatch "^2.3.1"
 
-"@savage181855/data-types@^1.0.3":
-  version "1.0.5"
-  resolved "https://registry.npmmirror.com/@savage181855/data-types/-/data-types-1.0.5.tgz#852076c94957e60682c4e839746c2403c1735d33"
-  integrity sha512-6rX7DmyxFhs6W4KpoZ4yVm4rY1EF+zUt33Wm5mDfD/gqFiUogPK9ErFpofAbZ8DLvyc3UjA9GwjeDbnfWBdo0w==
-
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"
   resolved "https://registry.npmmirror.com/@tsconfig/node10/-/node10-1.0.9.tgz#df4907fc07a886922637b15e02d4cebc4c0021b2"
@@ -1386,6 +1381,11 @@ safe-buffer@^5.1.0:
   version "2.1.2"
   resolved "https://registry.npmmirror.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
+
+savage-data-types@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/savage-data-types/-/savage-data-types-1.0.7.tgz#cfc9087c0536c9b4d5bfad03c8372cfb4fa54e77"
+  integrity sha512-jT09QYi1fT2EA0bSwwgYrS9HBxxwHGgmeZ2NWAIBLRkCIKTXOlks/A5Tsha27Z72aNJHCMNTke4UqxOMJQZGxA==
 
 semver@^6.0.0:
   version "6.3.1"

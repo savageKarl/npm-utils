@@ -1,4 +1,4 @@
-import { dataTypes } from "@savage181855/data-types";
+import { dataTypes } from "savage-data-types";
 
 export function each<T extends object>(
   obj: T,

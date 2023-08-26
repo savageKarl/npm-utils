@@ -1,3 +1,7 @@
+import { dataTypes } from 'savage-data-types'
+
+const {isObject, isNull } = dataTypes
+
 class Compare {
   private compare<T extends object, K extends T>(
     o1: T,
@@ -8,10 +12,8 @@ class Compare {
 
     // 如果基本类型不相等或者不是引用类型，并且不是对象就不用执行了
     if (
-      typeof o1 !== "object" ||
-      o1 === null ||
-      typeof o2 !== "object" ||
-      o2 === null
+      !isObject(o1) || isNull(o1) ||
+      !isObject(o2) || isNull(o2)
     ) {
       return false;
     }

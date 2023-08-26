@@ -1,4 +1,4 @@
-import { dataTypes } from "@savage181855/data-types";
+import { dataTypes } from "savage-data-types";
 
 class Copy {
   private copy<T extends object>(o: T, type: "shallow" | "deep"): T {
