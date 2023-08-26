@@ -1,16 +1,11 @@
 {
   "name": "@savage181855/utils",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "js工具库",
   "main": "dist/index.cjs",
   "module": "./dist/index.mjs",
-  "miniprogram": "dist",
   "files": [
-    ".dist/index.d.ts",
-    ".dist/index.cjs",
-    ".dist/index.cjs.map",
-    ".dist/index.mjs",
-    ".dist/index.mjs.map"
+    "dist/*"
   ],
   "types": "./dist/index.d.ts",
   "publishConfig": {
