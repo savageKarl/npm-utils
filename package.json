@@ -1,6 +1,6 @@
 {
   "name": "@savage181855/utils",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "js工具库",
   "main": "dist/index.js",
   "module": "./dist/index.mjs",
@@ -9,7 +9,7 @@
     "/dist",
     "readme.md"
   ],
-  "types": "module",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "ts-node ./example/index.ts",
     "build": "rollup -c rollup.config.js",
