@@ -1,11 +1,11 @@
 {
   "name": "@savage181855/utils",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "js工具库",
   "main": "dist/index.cjs",
   "module": "./dist/index.mjs",
   "files": [
-    "dist/*"
+    "dist/index.mjs"
   ],
   "types": "./dist/index.d.ts",
   "publishConfig": {
