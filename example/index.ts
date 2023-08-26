@@ -1,4 +1,4 @@
-import { shallowCopy, area } from "@savage181855/utils";
+import { shallowCopy, area, debounce } from "@savage181855/utils";
 
 const a = {
     test: {
@@ -8,4 +8,6 @@ const a = {
 const b = shallowCopy(a);
 b.test.foo = "foo";
 
-console.log(a, b);
+debounce(() => {
+    console.log("sss");
+});
