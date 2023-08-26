@@ -1,25 +1,11 @@
-import { deepCompare, shallowCopy } from "../src/index";
-
+import { shallowCopy, area } from "@savage181855/utils";
 
 const a = {
-  str: '',
-  num: 0,
-  reg: /reg/,
-  fun: function() {},
-  date: new Date(),
-  obj: {
-    fuck: 'fuck'
-  }
-}
-
-
-// deepClone()
-
-
-
+    test: {
+        foo: "bar",
+    },
+};
 const b = shallowCopy(a);
+b.test.foo = "foo";
 
-// b.obj.fuck = 'shit'
-
-console.debug(a, b)
-console.log(deepCompare(a, b))
+console.log(a, b);

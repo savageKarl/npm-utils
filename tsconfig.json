@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "./lib", // 输出目录
+    // "outDir": "./lib", // 输出目录
     "sourceMap": true, // 是否生成sourceMap
     "target": "es6", // 编译目标
     "module": "esnext", // 模块类型
