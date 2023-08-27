@@ -9,7 +9,7 @@ const a = {
 
 const b = {
     test: {
-        foo: "lay",
+        foo: "layllll",
     },
 }
 

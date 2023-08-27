@@ -47,6 +47,8 @@ npm link roullup-ts
 
 每次src编译之后，example的 link 就会丢失，需要在 根目录重新进行 npx link
 
+link 丢失的原因是  del dist目录，不要del就行
+
 
 考虑写一个 rollup 插件 进行解决 每次npm-lib都需要重复的config文件，以及手动更新重复安装依赖，考虑写一个插件预设，直接通过包就进行更新打包配置
 
