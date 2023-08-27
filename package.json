@@ -1,6 +1,6 @@
 {
   "name": "savage-utils",
-  "version": "1.0.44",
+  "version": "1.0.45",
   "description": "js工具库",
   "main": "dist/index.cjs",
   "module": "./dist/index.mjs",
