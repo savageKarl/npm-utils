@@ -1,6 +1,6 @@
 {
   "name": "savage-utils",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "js工具库",
   "main": "dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -43,8 +43,6 @@
     "typescript": "^4.8.4"
   },
   "dependencies": {
-    "@types/lodash-es": "^4.17.8",
-    "lodash": "^4.17.21",
     "savage-data-types": "^1.0.7"
   }
 }
