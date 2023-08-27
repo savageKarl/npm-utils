@@ -1,13 +1,18 @@
-import { deepMerge } from "savage-utils";
+import { deepMerge,shallowMerge } from "savage-utils";
 
 const a = {
     test: {
         foo: "bar",
+        dog: 'cat'
     },
 };
 
 const b = {
-    hello: 'shit'
+    test: {
+        foo: "lay",
+    },
 }
 
 console.log(deepMerge(a, b))
+
+console.log(shallowMerge(a, b))
