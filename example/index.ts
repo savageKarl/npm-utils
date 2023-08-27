@@ -1,13 +1,13 @@
-import { shallowCopy, area, debounce } from "@savage181855/utils";
+import { deepMerge } from "savage-utils";
 
 const a = {
     test: {
         foo: "bar",
     },
 };
-const b = shallowCopy(a);
-b.test.foo = "foo";
 
-debounce(() => {
-    console.log("sss");
-});
+const b = {
+    hello: 'shit'
+}
+
+console.log(deepMerge(a, b))
