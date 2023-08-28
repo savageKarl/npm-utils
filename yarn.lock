@@ -1389,10 +1389,10 @@ savage-rollup-command@^0.0.2:
   dependencies:
     savage-data-types "^1.0.7"
 
-savage-rollup-config@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/savage-rollup-config/-/savage-rollup-config-0.0.10.tgz#0daf6200d7466345eb72c7a20e1653cd814c953b"
-  integrity sha512-tCRZsPGKct+9iWR/xfavNP2ym6OU05ji3ww9wfMnWEhvPpA3dFfBWf8kp2drEjEoH5QehikljOaP9z874pAcaQ==
+savage-rollup-config@^0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/savage-rollup-config/-/savage-rollup-config-0.0.11.tgz#466d074b12e893b181dc1e5ad86616034cac0a8f"
+  integrity sha512-xkMyjPtgguDNDXa1+AZMfszPQn56824eB+imMRUT93MXXQ51tNn/WcOOq0dI/DdguKS1JxbaO1xetgKg/utUWQ==
   dependencies:
     "@rollup/plugin-json" "^6.0.0"
     "@rollup/plugin-node-resolve" "^15.0.0"
