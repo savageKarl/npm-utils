@@ -1382,17 +1382,17 @@ savage-data-types@^1.0.7:
   resolved "https://registry.yarnpkg.com/savage-data-types/-/savage-data-types-1.0.7.tgz#cfc9087c0536c9b4d5bfad03c8372cfb4fa54e77"
   integrity sha512-jT09QYi1fT2EA0bSwwgYrS9HBxxwHGgmeZ2NWAIBLRkCIKTXOlks/A5Tsha27Z72aNJHCMNTke4UqxOMJQZGxA==
 
-savage-rollup-command@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/savage-rollup-command/-/savage-rollup-command-0.0.1.tgz#4c90ef4fed19262abfdc2744ccea8b96044a8e96"
-  integrity sha512-UDDrnbwKD0i+uirTCgqv1keqqXQ9T4FBCMdmIrgfvTWpNnwrKMwc0NCoJHKkioytyCYq/VIKjHW7VkOkjqd9vg==
+savage-rollup-command@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/savage-rollup-command/-/savage-rollup-command-0.0.2.tgz#1720c308a96e727aa38c3a5643ca0f77a6b0d2b9"
+  integrity sha512-NigKyA1syIAGxHX2d24Tde5gtVNN3sqWDO33brw33Gfoxc91JlcNggyLEASIG2dZ5OMhnLb3gA9oBnZZQy6B/g==
   dependencies:
     savage-data-types "^1.0.7"
 
-savage-rollup-config@0.0.5:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/savage-rollup-config/-/savage-rollup-config-0.0.5.tgz#d2ca9f9e833be5c464561986c8ea08f27335ee4e"
-  integrity sha512-4vTU5VfLCKmbQQE6Z00xKC7PIw85JaGPejWGPZditMc5y0oD1ofvQS9/+ED90m96etkq6fDf5mqb6TMhUcwUNQ==
+savage-rollup-config@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/savage-rollup-config/-/savage-rollup-config-0.0.10.tgz#0daf6200d7466345eb72c7a20e1653cd814c953b"
+  integrity sha512-tCRZsPGKct+9iWR/xfavNP2ym6OU05ji3ww9wfMnWEhvPpA3dFfBWf8kp2drEjEoH5QehikljOaP9z874pAcaQ==
   dependencies:
     "@rollup/plugin-json" "^6.0.0"
     "@rollup/plugin-node-resolve" "^15.0.0"
@@ -1408,7 +1408,7 @@ savage-rollup-config@0.0.5:
     rollup-plugin-dts "^6.0.0"
     rollup-plugin-typescript2 "^0.34.1"
     savage-data-types "^1.0.7"
-    savage-rollup-command "^0.0.1"
+    savage-rollup-command "^0.0.2"
     savage-utils "^1.0.45"
     typescript "^4.8.4"
 
