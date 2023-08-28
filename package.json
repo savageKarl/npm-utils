@@ -1,17 +1,17 @@
 {
   "name": "savage-utils",
-  "version": "1.0.45",
+  "version": "1.0.46",
   "description": "js工具库",
   "main": "dist/index.cjs",
   "module": "./dist/index.mjs",
   "files": [
     "dist/index.cjs",
     "dist/index.mjs",
-    "dist/index.d.ts",
+    "dist/main.d.ts",
     "dist/index.cjs.map",
     "dist/index.mjs.map"
   ],
-  "types": "./dist/index.d.ts",
+  "types": "./dist/main.d.ts",
   "type": "module",
   "publishConfig": {
     "access": "public",
