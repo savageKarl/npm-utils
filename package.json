@@ -1,6 +1,6 @@
 {
   "name": "savage-utils",
-  "version": "1.0.46",
+  "version": "1.0.47",
   "description": "js工具库",
   "main": "dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -21,10 +21,12 @@
     "dev": "cross-env mode=dev nodemon rollup.config.js",
     "build": "cross-env mode=pro rollup -c rollup.config.js",
     "push": "npm run build && npm publish --access public",
-    "use": "cross-env mode=dev rollup -c rollup.config.js -w"
+    "test": "jest"
   },
   "license": "GPL-3.0",
   "devDependencies": {
+    "@jest/globals": "^29.6.4",
+    "jest": "^29.6.4",
     "savage-rollup-config": "^0.0.11"
   },
   "dependencies": {

@@ -1,5 +1,7 @@
 import { dataTypes } from 'savage-data-types'
 
+import {deepCopy} from './copy'
+
 type ObjectKey = keyof object;
 
 const {isObject, isArray} = dataTypes
@@ -20,7 +22,7 @@ class Merge {
 					if (type === 'shallow') target[k as ObjectKey] = source[k as ObjectKey]
 					else {
 						if (!Reflect.has(target, k) || !isObject(source[k as ObjectKey])) {
-							return target[k as ObjectKey] = source[k as ObjectKey]
+							return target[k as ObjectKey] = deepCopy(source[k as ObjectKey])
 						}
 						this.merge(target[k as ObjectKey] as object , 'deep', source[k as ObjectKey])
 					}

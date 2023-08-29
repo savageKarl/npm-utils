@@ -6,7 +6,7 @@ type Callback = (...args: any) => unknown;
  * @param delay 延迟时间
  * @param immediate 是否立即调用
  */
-export function debounce(fn: Callback, delay = 1500, immediate = true) {
+export function debounce(fn: Callback, delay = 1500, immediate = false) {
   let timer: NodeJS.Timeout | null = null;
 
   return function (this: any, ...args: any) {

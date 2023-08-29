@@ -21,7 +21,7 @@ export class Iterator<T extends any[]> {
     };
 
     this.isDone = () => {
-      return current >= this.length;
+      return current + 1 >= this.length;
     };
 
     this.length = obj.length;
