@@ -1,4 +1,4 @@
-import { describe, expect, test } from '@jest/globals';
+import { describe, expect, jest, test } from '@jest/globals';
 import {get, shallowCompare, deepCompare, shallowCopy, deepCopy,  eventCenter, getSingle, Iterator, each, shallowMerge, deepMerge, debounce, throttle } from 'savage-utils'
 
 
@@ -143,41 +143,44 @@ test('merge', () => {
   const c = deepMerge({}, a)
   c.foo.bar = 'no'
   expect(c).not.toEqual(a)
-
-  console.log(a, c)
 })
 
 describe('optimization', () => {
+  jest.useFakeTimers()
 
-  let value = 0;
-
-  function add() {
-    value++
-  }
-  
   test('debounce', () => {
+    let value = 0;
+
+    function add() {
+      value++
+    }
     const add2 = debounce(add, 10);
     [1,1,1,1,1].map(() => {
       add()
       add2()
     })
-    setTimeout(() => {
-      expect(value).toEqual(6) 
-    }, 10)
+    jest.runAllTimers()
+    expect(value).toEqual(6) 
   })
 
 
-  // test('throttle', () => {
-  //   const add2 = throttle(add, 100)
-  //   const t = setInterval(() => {
-  //     console.log(value)
-  //     add()
-  //   }, 1);
+  test('throttle', () => {
+    let value = 0;
 
-  //   setTimeout(( )=> {
-  //     clearInterval(t)
-  //     expect(value).toEqual(16)
-  //   }, 1000)
-  // })
+    function add() {
+      value++
+    }
+    const add2 = throttle(add, 100)
+    const t = setInterval(() => {
+      add2()
+    }, 1);
+
+    setTimeout(( )=> {
+      clearInterval(t)
+    }, 1000)
+    
+    jest.runAllTimers()
+    expect(value).toEqual(10)
+  })
 })
 

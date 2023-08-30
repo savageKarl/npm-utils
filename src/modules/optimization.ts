@@ -35,7 +35,6 @@ export function throttle(
 ) {
   if (type === "timestamp") {
     let prevTime = 0;
-
     return function (this: any, ...args: any) {
       const currentTime = Date.now();
       if (currentTime - prevTime > delay) {
