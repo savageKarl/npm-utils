@@ -4113,10 +4113,10 @@ savage-data-types@^1.0.7:
   resolved "https://registry.yarnpkg.com/savage-data-types/-/savage-data-types-1.0.7.tgz#cfc9087c0536c9b4d5bfad03c8372cfb4fa54e77"
   integrity sha512-jT09QYi1fT2EA0bSwwgYrS9HBxxwHGgmeZ2NWAIBLRkCIKTXOlks/A5Tsha27Z72aNJHCMNTke4UqxOMJQZGxA==
 
-savage-data-types@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/savage-data-types/-/savage-data-types-1.0.8.tgz#5bee2d4f4dcec3e4d99c781352d6ce45420864e4"
-  integrity sha512-VSEbXnZjsiRQeVDXNt/5Iuvg7GfzET6dHPu72Nygby2llmVA3WrbhNVKTUodvFWXpf3wr7kfZzmin6aFSf4qOw==
+savage-data-types@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/savage-data-types/-/savage-data-types-1.0.9.tgz#6975983fd4f7e594c34cf1e5ce361cbbc0ea0880"
+  integrity sha512-oOzCybP3gjnJZc7wMUy/v1GiI52NdaRJTXMJkK7VB21nl1XQymiHRBev+CxURQVXv3ec4H1v2tzu/8Mqp+Amwg==
 
 savage-del@^7.1.2:
   version "7.1.2"
@@ -4141,10 +4141,10 @@ savage-rollup-command@^0.0.8:
     savage-data-types "^1.0.7"
     savage-del "^7.1.2"
 
-savage-rollup-config@^0.0.13:
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/savage-rollup-config/-/savage-rollup-config-0.0.13.tgz#991bf804ab235efeaa54142e74595a305f2bec1b"
-  integrity sha512-ZGO6lqdiR9Wiriqmi7YL0fsY0ROypw/FOt5yatqKpPMGmZf4fL6yTl68vTDYdA09yTmYXnc6IS/Rln9f4FSnQg==
+savage-rollup-config@^0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/savage-rollup-config/-/savage-rollup-config-0.0.14.tgz#49af09014eb1d34e136605953e2b85b5975ead29"
+  integrity sha512-DzqSLkCHmyIRV49IsN6SUhSeNa18QMi/6TFDD9DIi9F8XkPfP7i9kTxMqpzxn2YynZZUZZJi+bwpcFzj3q3NFA==
   dependencies:
     "@commitlint/cli" "^17.7.1"
     "@commitlint/config-conventional" "^17.7.0"

@@ -1,41 +1,41 @@
 {
-  "name": "savage-utils",
-  "version": "1.0.48",
-  "description": "js工具库",
-  "main": "dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "miniprogram": "dist",
-  "files": [
-    "dist/index.cjs",
-    "dist/index.mjs",
-    "dist/main.d.ts",
-    "dist/index.cjs.map",
-    "dist/index.mjs.map"
-  ],
-  "types": "./dist/main.d.ts",
-  "type": "module",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
-  "scripts": {
-    "dev": "cross-env mode=dev nodemon rollup.config.js",
-    "build": "cross-env mode=pro rollup -c rollup.config.js",
-    "prepush": "npm run build",
-    "push": "npm publish --access public",
-    "lint": "eslint .",
-    "commit": "git-cz"
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
-  },
-  "license": "GPL-3.0",
-  "devDependencies": {
-    "savage-rollup-config": "^0.0.13"
-  },
-  "dependencies": {
-    "savage-data-types": "^1.0.8"
-  }
+	"name": "savage-utils",
+	"version": "1.0.49",
+	"description": "js工具库",
+	"main": "dist/index.cjs",
+	"module": "./dist/index.mjs",
+	"miniprogram": "dist",
+	"files": [
+		"dist/index.cjs",
+		"dist/index.mjs",
+		"dist/main.d.ts",
+		"dist/index.cjs.map",
+		"dist/index.mjs.map"
+	],
+	"types": "./dist/main.d.ts",
+	"type": "module",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"scripts": {
+		"dev": "cross-env mode=dev nodemon rollup.config.js",
+		"build": "cross-env mode=pro rollup -c rollup.config.js",
+		"prepush": "npm run build",
+		"push": "npm publish --access public",
+		"lint": "eslint .",
+		"commit": "git-cz"
+	},
+	"config": {
+		"commitizen": {
+			"path": "node_modules/cz-conventional-changelog"
+		}
+	},
+	"license": "GPL-3.0",
+	"devDependencies": {
+		"savage-rollup-config": "^0.0.14"
+	},
+	"dependencies": {
+		"savage-data-types": "^1.0.9"
+	}
 }
