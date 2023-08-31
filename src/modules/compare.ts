@@ -6,7 +6,7 @@ class Compare {
 	private compare<T extends object, K extends T>(
 		o1: T,
 		o2: K,
-		type: 'shallow' | 'deep',
+		type: 'shallow' | 'deep'
 	): boolean {
 		if (o1 === o2) return true
 
@@ -20,7 +20,7 @@ class Compare {
 
 		if (len1 !== len2) return false
 
-		for (let key of Object.keys(o1)) {
+		for (const key of Object.keys(o1)) {
 			if (type === 'shallow') {
 				if (o1[key as keyof T] !== o2[key as keyof T]) return false
 			}
@@ -29,7 +29,7 @@ class Compare {
 				const result = this.compare(
 					o1[key as keyof T] as any,
 					o2[key as keyof T],
-					'deep',
+					'deep'
 				)
 				if (!result) return result
 			}
