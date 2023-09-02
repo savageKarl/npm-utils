@@ -47,6 +47,15 @@ class Merge {
 	}
 }
 
-const { shallowMerge, deepMerge } = new Merge()
+const {
+	/**
+	 * 浅合并，只会合并第一层数据
+	 */
+	shallowMerge,
+	/**
+	 * 深合并，递归合并每一层数据
+	 */
+	deepMerge
+} = new Merge()
 
 export { shallowMerge, deepMerge }

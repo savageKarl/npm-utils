@@ -1,5 +1,11 @@
 import { dataTypes } from 'savage-data-types'
 
+/**
+ * 迭代器模式：内部迭代器，由函数内部控制自动进行迭代
+ *
+ * @param obj 目标对象
+ * @param fn 回调函数
+ */
 export function each<T extends object>(
 	obj: T,
 	fn: (v: T[keyof T], i: keyof T, obj: T) => unknown
@@ -12,6 +18,9 @@ export function each<T extends object>(
 	}
 }
 
+/**
+ * 迭代器模式：外部迭代器，由外部控制进行迭代
+ */
 export class Iterator<T extends any[]> {
 	constructor(obj: T) {
 		let current = 0

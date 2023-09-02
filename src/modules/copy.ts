@@ -31,6 +31,11 @@ class Copy {
 	}
 }
 
-const { shallowCopy, deepCopy } = new Copy()
+const {
+	/** 浅拷贝，只会拷贝第一层数据 */
+	shallowCopy,
+	/** 深拷贝，会递归拷贝每一层的数据 */
+	deepCopy
+} = new Copy()
 
 export { shallowCopy, deepCopy }

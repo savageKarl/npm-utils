@@ -1,16 +1,20 @@
-import { deepCopy } from './copy'
-
-import type { ObjectAndAarryType } from './functions'
-
 interface SubscribeType {
 	[index: string | symbol]: Array<(...args: any) => unknown>
 }
 
-class EventCenter {
+/**
+ * 发布订阅模型
+ */
+export class EventCenter {
 	private subscribeList: SubscribeType = {}
 	// 储存已发布未订阅的消息
 	private pubAndNoSub: SubscribeType = {}
 
+	/**
+	 *
+	 * @param name - msg name of subscribe
+	 * @param fn - callback
+	 */
 	subscribe(name: string, fn: (...arg: any) => unknown) {
 		if (this.pubAndNoSub[name]) {
 			fn(this.pubAndNoSub[name])
@@ -43,10 +47,14 @@ class EventCenter {
 	}
 }
 
-export const eventCenter = new EventCenter()
+/** 给对象添加发布订阅的事件中心 */
+// export function installEventCenter(obj: Record<string, any>) {
+// 	const res = Object.assign({}, new EventCenter(), obj)
+// 	return res as EventCenter & typeof obj
+// }
 
 /** 给对象添加发布订阅的事件中心 */
-// export function installEventCenter(obj: ObjectAndAarryType) {
+// export function installEventCenter(obj: Record<string, any>) {
 //   console.log(eventCenter)
 //   const cloneObj = deepCopy(eventCenter);
 //   console.log(cloneObj)

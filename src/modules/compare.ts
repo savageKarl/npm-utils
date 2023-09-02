@@ -38,12 +38,18 @@ class Compare {
 		return true
 	}
 
-	/** 对象浅比较，只比较第一层数据 */
+	/**
+	 * 对象浅比较，只比较第一层数据
+	 *
+	 */
 	shallowCompare = <T extends object, K extends T>(o1: T, o2: K) => {
 		return this.compare(o1, o2, 'shallow')
 	}
 
-	/** 对象深比较，比较所有层数据， 深比较主要的点在于，Object或Array实例的每一个属性，基本类型或者特殊构造器类型是否相同 */
+	/**
+	 * 对象深比较，比较所有层数据，深比较主要的点在于，Object或Array实例的每一个属性，基本类型或者特殊构造器类型是否相同
+	 *
+	 */
 	deepCompare = <T extends object, K extends T>(o1: T, o2: K) => {
 		return this.compare(o1, o2, 'deep')
 	}

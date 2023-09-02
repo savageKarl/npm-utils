@@ -1,8 +1,17 @@
-export type ObjectAndAarryType = Record<string, any>
-
 // a[3].b -> a.3.b -> [a, 3, b]
 /** lodash get方法 */
-export function get(data: ObjectAndAarryType, path: string) {
+/**
+ * @example
+ *
+ * ```ts
+ * const object = { a: [{ b: { c: 3 } }] }
+ * console.log(get(object, 'a[0].b.c')) // 3
+ * ```
+ * @param data
+ * @param path
+ * @returns
+ */
+export function get(data: Record<string, any>, path: string) {
 	const paths = path
 		.replace(/\[(\w+)\]/g, '.$1')
 		.replace(/\["(\w+)"\]/g, '.$1')
@@ -13,7 +22,7 @@ export function get(data: ObjectAndAarryType, path: string) {
 }
 
 /** 单例模式 */
-export function getSingle<T>(fn: () => T) {
+export function getSingle<T = unknown>(fn: () => T) {
 	let res: T
 
 	return function (this: unknown, ...args: any) {
